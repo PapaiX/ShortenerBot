@@ -69,7 +69,7 @@ class Bot(Client):
         LOGGER.info(msg="App Stopped.")
         exit()
 
-app = Client(Config.SESSION_NAME, api_id=Config.APP_ID, api_hash=Config.API_HASH, bot_token=Config.BOT_TOKEN)
+app = Client( api_id=Config.APP_ID, api_hash=Config.API_HASH, bot_token=Config.BOT_TOKEN)
 
 
 app.run()
